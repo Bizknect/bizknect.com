@@ -1,0 +1,240 @@
+<style>
+    .hero {
+        display: table;
+        background-image: url('/images/index/hero_bkg.jpg');
+        height: 670px;
+        width: 100%;
+        float: left;
+        margin: -30px 0 0 0;
+    }
+
+    .plumber {
+        float: left;
+        width: 30%;
+        margin: -48px 0 0 70px;
+    }
+
+    .callOut {
+        float: left;
+        width: 930px;
+        font-size: 640%;
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding: 70px 0 0 0; box-sizing: border-box;
+        margin: 0 0 0 450px;
+        position: absolute;
+        line-height: 110%;
+    }
+
+    .callOut span[data-type='1'] { display: table; }
+    .callOut span[data-type='2'] { display: table; margin-left: 90px; }
+    .callOut span[data-type='3'] { display: table; margin-left: 130px;}
+    .callOut span[data-type='4'] { display: table; margin-left: 180px; margin-top: -20px; }
+
+    .callOut .bold {
+        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
+        color: #f54b00;
+    }
+
+    .getStartedBtn {
+        float: right;
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 340%;
+        color: #FFF;
+        background-color: #f54b00;
+        border-radius: 60px;
+        padding: 30px 50px;
+        margin: -50px 20% 0 0;
+        cursor: pointer;
+    }
+
+    .getStartedBtn:hover {
+        background-color: #c13b00;
+    }
+
+    /****************************
+        Referrals
+    ****************************/
+    #referrals {
+        display: table;
+        float: left; clear: both;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    #referrals .image {
+        display: table;
+        float: left; clear: none;
+        width: 563px; height: 396px;
+        background-image: url('/images/index/moneyAndCard.png');
+        background-repeat: no-repeat;
+        margin: 0 0 0 80px;
+    }
+
+    #referrals .text {
+        display: table;
+        float: right; clear: none;
+        width: 600px;
+        margin: 0 80px 0 0;
+    }
+
+    #referrals .text .header {
+        float: right;
+        font-family: "vag_rounded_black", Arial, Helvetica, sans-serif;
+        font-size: 250%; letter-spacing: 3px;
+        margin: 80px 0 0 -120px;
+    }
+
+    #referrals .text .content {
+        float: left;
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        line-height: 200%;
+        margin-top: 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+    #referrals .text .content .reg {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+    }
+
+    /****************************
+        How To Start
+    ****************************/
+    #howToStart {
+        display: table;
+        float: left; clear: both;
+        width: 100%;
+        margin-top: 160px;
+    }
+
+    #howToStart .image {
+        display: table;
+        float: left; clear: none;
+        width: 261px; height: 237px;
+        background-image: url('/images/index/bizKnect_big_icon.png');
+        background-repeat: no-repeat;
+        margin: 0 0 0 0;
+    }
+
+    #howToStart .text {
+        display: table;
+        float: left; clear: none;
+        width: 800px;
+        margin: 0 0 0 150px;
+    }
+
+    #howToStart .text .header {
+        float: left;
+        font-family: "vag_rounded_black", Arial, Helvetica, sans-serif;
+        font-size: 250%; letter-spacing: 3px;
+        margin: 0 0 20px 0;
+    }
+
+    #howToStart .text .content {
+        float: left;
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        line-height: 200%;
+        margin-top: 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+    #howToStart .text .content .reg {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+    }
+
+    #howToStart .text .content .bold {
+        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
+    }
+
+
+    /********************
+        Get Started
+    ********************/
+    #getStarted {
+        float: left; clear: both;
+        width: 100%;
+        padding: 60px 0; box-sizing: border-box;
+        background-color: #EEE;
+        border-top: 1px solid #DDD;
+        margin: 150px 0 0 0;
+    }
+
+    #getStarted .header {
+        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
+        font-size: 320%;
+        margin-bottom: 20px;
+    }
+
+    #getStarted .subheader {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 180%;
+        margin-bottom: 40px;
+    }
+
+    .getStartedBtn2 {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 320%;
+        color: #FFF;
+        background-color: #f54b00;
+        border-radius: 50px;
+        padding: 20px;
+        margin: 0 auto;
+        cursor: pointer;
+        width: 250px;
+    }
+
+    .getStartedBtn2:hover {
+        background-color: #c13b00;
+    }
+</style>
+<div id="divBODY">
+    <div class="innerContainer">
+        <div class="hero">
+            <div class="plumber">
+                <img src="/images/index/plumber.png">
+            </div>
+            <div class="callOut">
+                <span data-type="1">
+                    <i>&quot;</i> I earn up to <span class="bold">$400*</span>
+                </span>
+                <span data-type="2">for each referral!</span>
+                <span data-type="3">Joining BizKnect<span style="font-size: 30% !important;">SM</span></span>
+                <span data-type="4">is a no brainer."</span>
+            </div>
+        </div>
+        <div class="getStartedBtn" onClick="location.href='/getStarted'">Get Started</div>
+        <div id="referrals">
+            <div class="image">&nbsp;</div>
+            <div class="text">
+                <div class="header"><span style="color: #7F7F7F;">Referrals </span><span style="color: #f54b00;">= Increase Revenue </span><img src="/images/bizKnect_icon.png" style="margin: 0 0 0 10px"/></div>
+                <div class="content">You'll receive a FREE BizKnect Prepaid MasterCard<span class="reg">&reg;</span> which allows us to instantly transfer referral fees up
+                    to $400 to you. The card also provides many extra benefits to help you manage your business expenses.</div>
+            </div>
+        </div>
+        <div id="howToStart">
+            <div class="text">
+                <div class="header"><img src="/images/bizKnect_icon.png" style="margin: 0 30px 0 0;"/><span style="color: #f54b00;">How</span> Do I Get Started?</div>
+                <div class="content">
+                    <div><span class="bold">STEP 1:</span> Email or call a BizKnect representative to enroll at NO COST</div>
+                    <div><span class="bold">STEP 2:</span> Upon receipt activate your FREE BizKnect Prepaid MasterCard<span class="reg">&reg;</span></div>
+                    <div><span class="bold">STEP 3:</span> Start making referrals and start earning lots of extra cash</div>
+                </div>
+            </div>
+            <div class="image">&nbsp;</div>
+        </div>
+    </div>
+    <div id="getStarted">
+        <div class="header">
+            <span style="color: #818181;">Want to Start Making </span>
+            <span style="color: #f54b00;">More Money?</span>
+        </div>
+        <div class="subheader">Register today. It's FREE and east to start.</div>
+        <div class="getStartedBtn2" onClick="location.href='/getStarted'">Get Started</div>
+    </div>
+</div>

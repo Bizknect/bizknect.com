@@ -1,0 +1,103 @@
+<style>
+    .header {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 300%;
+        margin-bottom: 50px;
+    }
+
+    .dividerLine {
+        height: 3px;
+        background-color: #000;
+        opacity: .1;
+        width: 100%;
+        margin: 30px auto 70px;
+    }
+
+    .content {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        line-height: 200%;
+        margin: 0 auto 100px;
+        width: 80%;
+    }
+
+    .content {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        line-height: 200%;
+        margin: 0 auto 100px;
+        width: 80%;
+    }
+
+    .content .subheader {
+        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
+        font-size: 120%;
+        line-height: 200%;
+        width: 100%;
+        margin: 80px 0 30px;
+    }
+
+    .getStartedBtn2 {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 120%;
+        color: #FFF;
+        background-color: #7F7F7F;
+        border-radius: 50px;
+        padding: 20px;
+        margin: 50px auto 0;
+        cursor: pointer;
+        width: 450px;
+    }
+
+    .getStartedBtn2:hover {
+        background-color: #333;
+    }
+
+    .plumbers {
+        width: auto;
+        margin: 0 auto;
+        background-image: url('/images/about/bkg_line.gif');
+        background-repeat: repeat-x;
+        background-position: 0 50%;
+    }
+    .plumbers .node {
+        display: inline-block;
+        width: 40px; height: 40px;
+        background-color: #7F7F7F;
+        border-radius: 100%;
+        margin-top: 120px;
+    }
+
+    .plumbers .image {
+        width: 279px; height: 279px;
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    .plumbers .image[data-value='1'] { background-image: url('/images/about/plumber1.png')}
+    .plumbers .image[data-value='2'] { background-image: url('/images/about/plumber2.png')}
+    .plumbers .image[data-value='3'] { background-image: url('/images/about/plumber3.png')}
+    .plumbers .image[data-value='4'] { background-image: url('/images/about/plumber4.png')}
+
+</style>
+<div id="divBODY">
+    <div class="innerContainer">
+        <div class="header">About BizKnect<span style="font-size: 30% !important;">SM</span></div>
+        <div class="plumbers">
+            <div class="node" style="float: left;">&nbsp;</div>
+            <div class="image" data-value="1">&nbsp;</div>
+            <div class="image" data-value="2">&nbsp;</div>
+            <div class="image" data-value="3">&nbsp;</div>
+            <div class="image" data-value="4">&nbsp;</div>
+            <div class="node" style="float: right;">&nbsp;</div>
+        </div>
+        <div class="content">
+            <div class="subheader">Plumbers, Welcome to BizKnect.</div>
+            <div>
+                We are a growing network of licensed restoration companies whose mission is to help you earn extra cash.  You can receive a referral fee of up to $400 just by referring customers who have experienced water and/or property damage. So, join the 100s of plumbers already supplementing their income.
+                <p>It's easy to enroll and get started.  We teach you everything you need to know and process is simple
+            </div>
+            <div class="getStartedBtn2" onClick="location.href='/getStarted'">Click Here To Learn More</div>
+        </div>
+    </div>
+</div>

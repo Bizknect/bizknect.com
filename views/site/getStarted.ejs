@@ -1,0 +1,227 @@
+<style>
+    .header {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 300%;
+        margin-bottom: 50px;
+    }
+
+    .dividerLine {
+        height: 3px;
+        background-color: #000;
+        opacity: .1;
+        width: 100%;
+        margin: 10px auto 0;
+    }
+
+
+    .dividerLine2 {
+        float: left;
+        height: 1px;
+        opacity: .8;
+        width: 100%;
+        margin: 15px auto 30px;
+        border-top: 1px dashed #000;
+    }
+    .content {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        line-height: 200%;
+        margin: 0 auto 100px;
+        width: 80%;
+    }
+
+    .content {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        line-height: 200%;
+        margin: 0 auto 100px;
+        width: 80%;
+    }
+
+     .subheader {
+        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
+        font-size: 120%;
+        line-height: 200%;
+        width: 100%;
+        margin: 30px 0 20px;
+    }
+
+    .getStartedBtn2 {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 120%;
+        color: #FFF;
+        background-color: #7F7F7F;
+        border-radius: 50px;
+        padding: 20px;
+        margin: 50px auto 0;
+        cursor: pointer;
+        width: 450px;
+    }
+
+    .getStartedBtn2:hover {
+        background-color: #333;
+    }
+
+    .form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .formSection {
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+
+    .formItem {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        display: inline-block;
+        width: auto;
+        margin: 0 10px 30px;
+    }
+
+    .formItem .label {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        color: #AAA;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .formItem .label[data-type='required'] {
+        color: #9a2f00;
+    }
+
+    .formItem .input input {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 180%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid #AAA;
+    }
+
+    .formItem .input select {
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 140%;
+        border-radius: 8px;
+        border: 2px solid #AAA;
+        padding: 10px 10px 13px;
+        cursor: pointer;
+    }
+
+    .formItem .input input[data-type='required'], .formItem .input select[data-type='required'] {
+        border: 2px solid #9a2f00;
+    }
+
+    .requiredFields {
+        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        color: #9a2f00;
+        margin-bottom: 30px;
+    }
+
+    .getStartedBtn2 {
+        display: inline-block;
+        font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
+        font-size: 150%;
+        color: #FFF;
+        background-color: #7F7F7F;
+        border-radius: 20px;
+        padding: 20px;
+        cursor: pointer;
+        width: auto;
+        margin: 20px auto 60px;
+    }
+
+    .getStartedBtn2:hover {
+        background-color: #333;
+    }
+
+</style>
+<div id="divBODY">
+    <div class="innerContainer">
+        <div class="header">Get Started</div>
+        <div class="dividerLine">&nbsp;</div>
+        <div class="subheader">Please fill out the information below and representative will get back to you depending on your preferred method of contact.</div>
+        <div class="requiredFields">Required Fields *</div>
+        <form action="">
+            <div class="form">
+                <div class="dividerLine2">&nbsp;</div>
+                <div class="formSection">
+                    <div class="formItem">
+                        <div class="label" data-type="required">First Name *</div>
+                        <div class="input"><input data-type="required" type="text" name="firstName" id="firstName" style="width: 250px"></div>
+                    </div>
+                    <div class="formItem">
+                        <div class="label" data-type="required">Last Name *</div>
+                        <div class="input"><input data-type="required" type="text" name="lastName" id="lastName" style="width: 350px"></div>
+                    </div>
+                </div>
+                <div class="dividerLine2">&nbsp;</div>
+                <div class="formSection">
+                    <div class="formItem">
+                        <div class="label" data-type="required">Address Line 1 *</div>
+                        <div class="input"><input data-type="required" type="text" name="address1" id="address1" style="width: 500px"></div>
+                    </div>
+                    <div class="formItem">
+                        <div class="label">(PO Box, Apt, Suite, etc) *</div>
+                        <div class="input"><input  type="text" name="address2" id="address2" style="width: 250px"></div>
+                    </div>
+                </div>
+                <div class="formSection">
+                    <div class="formItem">
+                        <div class="label" data-type="required">City *</div>
+                        <div class="input"><input data-type="required" type="text" name="city" id="city" style="width: 300px"></div>
+                    </div>
+                    <div class="formItem">
+                        <div class="label" data-type="required">State *</div>
+                        <div class="input">
+                            <select data-type="required">
+                                <% for(var key in usStates) { %>
+                                <option value="<%- usStates[key].abbreviation %>"><%- usStates[key].name %></option>
+                                <%}%>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formItem">
+                        <div class="label" data-type="required">Zip Code *</div>
+                        <div class="input"><input data-type="required" type="text" name="zipCode" id="zipCode" style="width: 150px"></div>
+                    </div>
+                </div>
+                <div class="dividerLine2">&nbsp;</div>
+                <div class="formSection">
+                    <div class="formItem" style="margin-right: 60px;">
+                        <div class="label" data-type="required">Email *</div>
+                        <div class="input"><input data-type="required" type="text" name="email" id="email" style="width: 450px"></div>
+                    </div>
+                    <div class="formItem">
+                        <div class="label" data-type="required">Mobile *</div>
+                        <div class="input"><input data-type="required" type="text" name="mobile" id="mobile"></div>
+                    </div>
+                </div>
+                <div class="dividerLine2">&nbsp;</div>
+                <div class="formSection">
+                    <div class="formItem">
+                        <div class="label" >Company Name</div>
+                        <div class="input"><input type="text" name="companyName" id="companyName" style="width: 600px"></div>
+                    </div>
+                </div>
+                <div class="dividerLine2">&nbsp;</div>
+                <div class="formSection">
+                    <div class="formItem">
+                        <div class="label" data-type="required">Preferred Way to Contact You</div>
+                        <div class="input">
+                            <div style="float: left; font-size: 130%; margin-top: 10px;">
+                                <input data-type="required" type="radio" name="preferredContact" checked="checked" style="margin-right: 10px;">By Email
+                            </div>
+                            <div style="float: left; font-size: 130%; margin: 10px 0 0 20px;">
+                                <input data-type="required" type="radio" name="preferredContact" style="margin-right: 10px;">By Mobile
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="getStartedBtn2" onClick="location.href='/getStarted'">Submit My Information</div>
+            </div>
+        </form>
+    </div>
+</div>

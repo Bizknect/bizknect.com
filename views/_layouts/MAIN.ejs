@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%- title  %></title>
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="application/javascript" src="/js/jquery-2.1.1.min.js"></script>
+    <script type="application/javascript" src="/js/jquery-1.10.4.ui.js"></script>
+    <script type="application/javascript" src="/js/moment.min.js"></script>
+    <script type="application/javascript" src="/js/ajaxLoader.js"></script>
+    <% include ../../views/_css/MAIN.ejs %>
+</head>
+<% include ../../views/_layouts/_header.ejs %>
+<body>
+<div id="divCONTAINER">
+    <%- body %>
+    <% include ../../views/_layouts/_footer.ejs %>
+</div>
+</body>
+</html>
