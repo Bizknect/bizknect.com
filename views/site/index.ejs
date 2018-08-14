@@ -2,26 +2,32 @@
     .hero {
         display: table;
         background-image: url('/images/index/hero_bkg.jpg');
-        height: 670px;
+        height: 540px;
         width: 100%;
         float: left;
-        margin: -30px 0 0 0;
+        margin: -10px 0 0 0;
     }
 
     .plumber {
         float: left;
-        width: 30%;
-        margin: -48px 0 0 70px;
+        width: auto;
+        margin: -48px 0 -3px 150px;
+    }
+
+    .plumber img {
+        position: relative;
+        z-index: 4000;
+        height: 600px;
     }
 
     .callOut {
         float: left;
         width: 930px;
-        font-size: 640%;
+        font-size: 540%;
         font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
         text-align: left;
         padding: 70px 0 0 0; box-sizing: border-box;
-        margin: 0 0 0 450px;
+        margin: -10px 0 0 500px;
         position: absolute;
         line-height: 110%;
     }
@@ -39,12 +45,12 @@
     .getStartedBtn {
         float: right;
         font-family: "vag_rounded_light", Arial, Helvetica, sans-serif;
-        font-size: 340%;
+        font-size: 300%;
         color: #FFF;
         background-color: #f54b00;
         border-radius: 60px;
         padding: 30px 50px;
-        margin: -50px 20% 0 0;
+        margin: -50px 25% 0 0;
         cursor: pointer;
     }
 
@@ -59,7 +65,7 @@
         display: table;
         float: left; clear: both;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 60px;
     }
 
     #referrals .image {
@@ -121,8 +127,8 @@
     #howToStart .image {
         display: table;
         float: left; clear: none;
-        width: 261px; height: 237px;
-        background-image: url('/images/index/bizKnect_big_icon.png');
+        width: 425px; height: 350px;
+        background-image: url('/images/team.png');
         background-repeat: no-repeat;
         margin: 0 0 0 0;
     }
@@ -131,7 +137,7 @@
         display: table;
         float: left; clear: none;
         width: 800px;
-        margin: 0 0 0 150px;
+        margin: 120px 0 0 150px;
     }
 
     #howToStart .text .header {
@@ -149,15 +155,6 @@
         margin-top: 20px;
         text-align: left;
         width: 100%;
-    }
-
-    #howToStart .text .content .reg {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 100%;
-    }
-
-    #howToStart .text .content .bold {
-        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
     }
 
 
@@ -200,6 +197,17 @@
     .getStartedBtn2:hover {
         background-color: #c13b00;
     }
+
+    .reg {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 70%;
+    }
+
+    .bold {
+        font-family: "vag_rounded_bold", Arial, Helvetica, sans-serif;
+    }
+
+
 </style>
 <div id="divBODY">
     <div class="innerContainer">
@@ -209,11 +217,11 @@
             </div>
             <div class="callOut">
                 <span data-type="1">
-                    <i>&quot;</i> I earn up to <span class="bold">$400*</span>
+                    <i>&quot;</i> I earn up to <span class="bold">$400<sup style="font-size: 30%; margin-top: -40px;">*</sup></span>
                 </span>
-                <span data-type="2">for each referral!</span>
+                <span data-type="2">for each referral.</span>
                 <span data-type="3">Joining BizKnect<span style="font-size: 30% !important;">SM</span></span>
-                <span data-type="4">is a no brainer."</span>
+                <span data-type="4">is a no brainer!"</span>
             </div>
         </div>
         <div class="getStartedBtn" onClick="location.href='/getStarted'">Get Started</div>
@@ -221,8 +229,7 @@
             <div class="image">&nbsp;</div>
             <div class="text">
                 <div class="header"><span style="color: #7F7F7F;">Referrals </span><span style="color: #f54b00;">= Increased Revenue </span><img src="/images/bizknect_icon.png" style="margin: 0 0 0 10px"/></div>
-                <div class="content">You'll receive a <span class="bold">FREE BizKnect Prepaid MasterCard<span class="reg">&reg;</span></span> which allows us to instantly transfer referral fees up
-                    to <span class="black" style="color: #f54b00; font-size: 120%;">$400</span> to you. The card also provides many extra benefits to help you manage your business expenses.</div>
+                <div class="content">You'll receive a <span class="bold">FREE BizKnect Prepaid MasterCard<sup class="reg">&reg;</sup></span> which allows us to instantly transfer referral fees to you. The card also provides many extra benefits to help you better manage your business.</div>
             </div>
         </div>
         <div id="howToStart">
@@ -230,8 +237,8 @@
                 <div class="header"><img src="/images/bizknect_icon.png" style="margin: 0 30px 0 0;"/><span style="color: #f54b00;">How</span> Do I Get Started?</div>
                 <div class="content">
                     <div><span class="bold">STEP 1:</span> Email or call a BizKnect representative to enroll at NO COST</div>
-                    <div><span class="bold">STEP 2:</span> Upon receipt activate your FREE BizKnect Prepaid MasterCard<span class="reg">&reg;</span></div>
-                    <div><span class="bold">STEP 3:</span> Start making referrals and start earning lots of extra cash</div>
+                    <div><span class="bold">STEP 2:</span> Upon receipt activate your <span class="bold">FREE BizKnect Prepaid MasterCard<sup class="reg">&reg;</sup></span></div>
+                    <div><span class="bold">STEP 3:</span> Refer your clients and begin earning lots of extra cash</div>
                 </div>
             </div>
             <div class="image">&nbsp;</div>
@@ -242,7 +249,7 @@
             <span style="color: #818181;">Want to Start Making </span>
             <span style="color: #f54b00;">More Money?</span>
         </div>
-        <div class="subheader">Register today. It's FREE and east to start.</div>
+        <div class="subheader">Register today. It's <span class="bold">FREE</span> and easy to start.</div>
         <div class="getStartedBtn2" onClick="location.href='/getStarted'">Get Started</div>
     </div>
 </div>
